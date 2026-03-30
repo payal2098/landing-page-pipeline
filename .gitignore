@@ -1,0 +1,9 @@
+# Config file contains API credentials — never commit
+landing-page-config.json
+
+# Keyword research output data
+data/
+*.csv
+
+# OS files
+.DS_Store
