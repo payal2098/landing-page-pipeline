@@ -1,0 +1,63 @@
+{
+  "skill_name": "landing-page-pipeline",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a landing page for our CNC machining services. We are PrecisionWorks Engineering, a CNC machining company in Mumbai, India. We serve automotive, aerospace, and medical device OEMs. We are ISO 9001:2015 and AS9100D certified, have 25 CNC machines, and process aluminium, stainless steel, and titanium. Our DataForSEO credentials are login: test@example.com, password: test123. Target audience is B2B manufacturing engineers and procurement managers in India.",
+      "expected_output": "A complete landing page in developer-ready section format for CNC machining services, targeting Indian B2B audience with British English, INR pricing, and BIS/IS standards references.",
+      "expectations": [
+        "Detects missing landing-page-config.json and initiates onboarding flow",
+        "Asks for company details, products, audience, style, and DataForSEO credentials during onboarding",
+        "Attempts to run dataforseo_keywords.py with the provided credentials and seed keywords related to CNC machining",
+        "Creates a content brief with primary keyword, secondary keywords, competitor analysis, and recommended section structure",
+        "Presents a CHECKPOINT asking user to approve keyword research and brief before proceeding",
+        "Generates a landing page with the 11-section structure (Hero, Trust Bar, Definition, Categories, Specs, Variants, Applications, Social Proof, Why Choose Us, Get in Touch, FAQ)",
+        "Each section includes Layout type, Image spec, and Content (developer-ready format, not blog style)",
+        "Uses British English spelling (e.g., 'aluminium' not 'aluminum', 'specialised' not 'specialized')",
+        "Includes schema markup (Product or Service, FAQPage, BreadcrumbList, Organization or LocalBusiness)",
+        "Includes an internal linking map table",
+        "FAQ section appears AFTER Get in Touch section (Section 10 before Section 11)",
+        "Why Choose Us leads with company USPs, not partner credentials",
+        "Meta title is 51-55 characters, meta description is 150-160 characters"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Build a product page for our project management SaaS tool called TaskFlow. We're based in London, UK. We offer three pricing plans: Starter (£9/mo), Professional (£29/mo), and Enterprise (custom pricing). We serve B2B teams of 5-500 people across Europe. We use British English. Our certifications include SOC 2 Type II and GDPR compliance. DataForSEO login: test@example.com, password: test123, location code: 2826 for UK.",
+      "expected_output": "A complete landing page in developer-ready section format for a SaaS product, with British English, GBP pricing, Plans/Pricing section, and service-oriented schema markup.",
+      "expectations": [
+        "Detects missing config and runs onboarding for a SaaS business",
+        "Uses 'service' or 'SaaS' oriented language throughout, not manufacturing terminology",
+        "Section 4 adapts to 'Plans and Pricing' or 'Features' instead of 'Product Categories'",
+        "Section 5 adapts to 'Features and Capabilities' instead of 'Specifications'",
+        "Section 6 includes pricing plans table with GBP (£) pricing",
+        "Uses British English throughout (e.g., 'organisation' not 'organization', 'customise' not 'customize')",
+        "Includes Service schema (not Product schema) in the schema markup",
+        "FAQ section is the last content section, after Get in Touch",
+        "Meta title is 51-55 characters and includes primary keyword",
+        "Includes SOC 2 and GDPR in trust signals and certifications",
+        "Uses location code 2826 (UK) for DataForSEO API calls",
+        "No embedded contact form — uses CTA buttons ('Book a Demo', 'Start Free Trial')"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I need a landing page for my handmade ceramics shop. The business is called Clay & Kiln, based in Austin, Texas. We sell handmade mugs, bowls, and vases. B2C, American English, USD pricing. We ship across the US. We've been featured in Austin Monthly and Texas Made. DataForSEO login: test@example.com, password: test123, location: 2840 for USA.",
+      "expected_output": "A complete landing page for a B2C e-commerce business with American English, USD pricing, customer-focused social proof, and Product schema.",
+      "expectations": [
+        "Detects missing config and runs onboarding for a B2C e-commerce business",
+        "Uses American English throughout (e.g., 'color' not 'colour', 'customize' not 'customise')",
+        "Section 4 adapts to 'Our Collections' or 'Shop by Category' instead of 'Product Categories'",
+        "Section 8 adapts to customer reviews or press mentions instead of B2B project tiles",
+        "Includes press mentions (Austin Monthly, Texas Made) as social proof",
+        "Uses USD ($) for any pricing references",
+        "Uses location code 2840 (USA) for DataForSEO API calls",
+        "Includes Product schema (not Service schema) in schema markup",
+        "Tone is warm and friendly rather than technical (appropriate for B2C handmade goods)",
+        "Section 9 (Why Choose Us) leads with brand story and craftsmanship USPs",
+        "FAQ section appears after Get in Touch",
+        "CTA language is consumer-oriented ('Shop Now', 'Browse Collection') not B2B ('Request a Quote')"
+      ]
+    }
+  ]
+}
