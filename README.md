@@ -39,7 +39,7 @@ Three user checkpoints pause the pipeline for approval: after the brief, after t
 ## Installation
 
 ```bash
-claude skill install payal2098/landing-page-pipeline
+npx skills add payal2098/landing-page-pipeline -g -y
 ```
 
 Or clone manually:

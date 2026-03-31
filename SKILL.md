@@ -1,6 +1,7 @@
 ---
 name: landing-page-pipeline
 description: End-to-end landing page creation pipeline for any business. Runs keyword research, competitor analysis, content brief, developer-ready landing page, SEO optimisation, and automated QA in a single invocation. Use this skill whenever the user asks to create a landing page, build a product page, make a service page, run the LP pipeline, generate a landing page for a product or service, or says anything about landing page content creation. Works for manufacturing, SaaS, e-commerce, and service businesses in any country.
+license: MIT
 ---
 
 # Landing Page Pipeline
